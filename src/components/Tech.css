@@ -1,0 +1,5 @@
+.glass {
+  text-shadow: 0 0 3px white;
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+}
