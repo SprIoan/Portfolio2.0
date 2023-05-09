@@ -35,6 +35,7 @@ import nimts from "./company/nimts.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import oldportfolio from "./old-portfolio.png";
 
 export {
   logo,
@@ -71,4 +72,5 @@ export {
   jobit,
   tripguide,
   black,
+  oldportfolio,
 };

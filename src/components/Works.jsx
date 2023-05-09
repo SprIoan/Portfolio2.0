@@ -9,6 +9,7 @@ import "./Card.css";
 
 const ProjectCard = ({
   index,
+  key,
   name,
   description,
   tags,
@@ -16,13 +17,13 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div key={key} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <svg style={{ display: "none" }}>
         <defs>
-          <filter className="noise">
+          <filter id={`noise${index}`}>
             <feTurbulence
               baseFrequency="0.7,0.8"
-              seed="0"
+              seed={0}
               type="fractalNoise"
               result="static"
             >
@@ -30,8 +31,8 @@ const ProjectCard = ({
                 attributeName="seed"
                 values="0;100"
                 dur="800ms"
-                repeatCount="1"
-                begin="card.mouseenter"
+                repeatCount={1}
+                begin={`card${index}.mouseenter`}
               />
             </feTurbulence>
             <feDisplacementMap in="SourceGraphic" in2="static">
@@ -39,15 +40,15 @@ const ProjectCard = ({
                 attributeName="scale"
                 values="0;40;0"
                 dur="800ms"
-                repeatCount="1"
-                begin="card.mouseenter"
+                repeatCount={1}
+                begin={`card${index}.mouseenter`}
               />
             </feDisplacementMap>
           </filter>
         </defs>
       </svg>
 
-      <div className="card" key={`card-${index}`}>
+      <div className="card" id={`card${index}`}>
         <img src={image} alt="Neon sign in woods" />
         <div className="icons git">
           <a href={source_code_link} target="_blank">

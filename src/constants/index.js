@@ -21,6 +21,7 @@ import {
   gsna,
   shopify,
   carrent,
+  oldportfolio,
   nimts,
   jobit,
   tripguide,
@@ -216,7 +217,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: black,
+    image: oldportfolio,
     source_code_link: "https://github.com/",
   },
   {

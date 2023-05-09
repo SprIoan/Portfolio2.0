@@ -64,9 +64,44 @@
   padding: 5px;
 }
 
-.card:hover > img {
+#card0:hover > img {
   animation: pulse 800ms ease-in-out;
-  filter: url(.noise);
+  filter: url(#noise0);
+}
+
+#card1:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise1);
+}
+
+#card2:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise2);
+}
+
+#card3:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise3);
+}
+
+#card4:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise4);
+}
+
+#card4:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise4);
+}
+
+#card5:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise5);
+}
+
+#card6:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise6);
 }
 
 @media (max-width: 768px) {
