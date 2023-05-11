@@ -14,6 +14,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  preview_link,
   source_code_link,
 }) => {
   return (
@@ -49,14 +50,14 @@ const ProjectCard = ({
       </svg>
 
       <div className="card" id={`card${index}`}>
-        <img src={image} alt="Neon sign in woods" />
+        <img src={image} alt="Project Image" />
         <div className="icons git">
           <a href={source_code_link} target="_blank">
             <img src={github} />
           </a>
         </div>
         <div className="icons eye">
-          <a href="" target="_blank">
+          <a href={preview_link} target="_blank">
             <img src={eye} />
           </a>
         </div>
@@ -87,7 +88,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex justify-center	items-center flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

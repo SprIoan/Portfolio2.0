@@ -22,6 +22,13 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import cpp from "./tech/cpp.png";
+import python from "./tech/python.png";
+import sql from "./tech/sql.png";
+import c from "./tech/c.png";
+import sketch from "./tech/sketch.png";
+import prolog from "./tech/prolog.png";
+import sanity from "./tech/sanity.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -36,6 +43,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import oldportfolio from "./old-portfolio.png";
+import beyondpower from "./beyondpower.png";
+import ecommerce from "./ecommerce.png";
+import shareme from "./shareme.png";
+import under from "./under.png";
 
 export {
   logo,
@@ -59,7 +70,14 @@ export {
   redux,
   tailwind,
   typescript,
+  cpp,
+  python,
   threejs,
+  sql,
+  c,
+  sketch,
+  prolog,
+  sanity,
   meta,
   shopify,
   starbucks,
@@ -73,4 +91,8 @@ export {
   tripguide,
   black,
   oldportfolio,
+  beyondpower,
+  ecommerce,
+  shareme,
+  under,
 };

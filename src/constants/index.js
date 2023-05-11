@@ -4,7 +4,8 @@ import {
   creator,
   web,
   javascript,
-  typescript,
+  cpp,
+  python,
   html,
   css,
   reactjs,
@@ -15,6 +16,7 @@ import {
   git,
   figma,
   docker,
+  sql,
   meta,
   ntua,
   iccs,
@@ -27,6 +29,14 @@ import {
   tripguide,
   threejs,
   black,
+  c,
+  sketch,
+  prolog,
+  sanity,
+  beyondpower,
+  ecommerce,
+  shareme,
+  under,
 } from "../assets";
 
 export const navLinks = [
@@ -77,44 +87,49 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "C",
+    icon: c,
+  },
+  {
+    name: "Sketch",
+    icon: sketch,
+  },
+  {
+    name: "Prolog",
+    icon: prolog,
+  },
+  {
+    name: "Sanity",
+    icon: sanity,
   },
 ];
 
@@ -218,10 +233,11 @@ const projects = [
       },
     ],
     image: oldportfolio,
+    preview_link: "https://spr-portfolio.netlify.app/",
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Application for EV Charges",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -238,11 +254,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: beyondpower,
+    preview_link: "https://streamable.com/80yxhc",
+    source_code_link: "https://github.com/SprIoan",
   },
   {
-    name: "Trip Guide",
+    name: "E-commerce App",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -259,8 +276,53 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: ecommerce,
+    preview_link: "https://ecommerce-sanity-stripe-s655.vercel.app/",
+    source_code_link: "https://github.com/SprIoan/ecommerce_sanity_stripe",
+  },
+  {
+    name: "E-commerce App",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shareme,
+    preview_link: "https://share-me-spr.netlify.app/login",
+    source_code_link: "https://github.com/SprIoan/ShareMe",
+  },
+  {
+    name: "E-commerce App",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: under,
+    preview_link: "https://spr-tba.netlify.app/",
+    source_code_link: "https://spr-tba.netlify.app/",
   },
 ];
 
