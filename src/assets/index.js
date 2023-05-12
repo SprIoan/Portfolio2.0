@@ -8,19 +8,12 @@ import eye from "./eye.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import black from "./black.png";
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import cpp from "./tech/cpp.png";
 import python from "./tech/python.png";
@@ -30,18 +23,11 @@ import sketch from "./tech/sketch.png";
 import prolog from "./tech/prolog.png";
 import sanity from "./tech/sanity.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import ntua from "./company/ntua.png";
 import iccs from "./company/iccs.png";
 import gsna from "./company/gsna.jpg";
 import nimts from "./company/nimts.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import oldportfolio from "./old-portfolio.png";
 import beyondpower from "./beyondpower.png";
 import ecommerce from "./ecommerce.png";
@@ -59,17 +45,11 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
   git,
   html,
   javascript,
-  mongodb,
   nodejs,
   reactjs,
-  redux,
-  tailwind,
-  typescript,
   cpp,
   python,
   threejs,
@@ -78,18 +58,10 @@ export {
   sketch,
   prolog,
   sanity,
-  meta,
-  shopify,
-  starbucks,
   gsna,
   nimts,
   ntua,
   iccs,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
-  black,
   oldportfolio,
   beyondpower,
   ecommerce,

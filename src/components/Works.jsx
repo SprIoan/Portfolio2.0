@@ -9,7 +9,6 @@ import "./Card.css";
 
 const ProjectCard = ({
   index,
-  key,
   name,
   description,
   tags,
@@ -18,7 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div key={key} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <svg style={{ display: "none" }}>
         <defs>
           <filter id={`noise${index}`}>
