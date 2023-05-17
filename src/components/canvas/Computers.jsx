@@ -4,18 +4,14 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({isMobile}) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf')
+const Computers = ({ isMobile }) => {
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  console.log(isMobile)
   return (
-    
     <mesh>
-      <hemisphereLight intensity={0.15}
-      groundColor= "black"
-      />
+      <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1} />
-      <spotLight 
+      <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
@@ -27,12 +23,11 @@ const Computers = ({isMobile}) => {
         object={computer.scene}
         scale={isMobile ? 0.6 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.5, -2]}
-        rotation={[-0.01,-0.2,-0.1]}
-
+        rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
-}
+};
 
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -46,8 +41,7 @@ const ComputerCanvas = () => {
 
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
-      (window.innerWidth < 600 ? setIsMobile(true) : setIsMobile(false));
-      
+      window.innerWidth < 600 ? setIsMobile(true) : setIsMobile(false);
     };
 
     // Add the callback function as a listener for changes to the media query
@@ -57,27 +51,26 @@ const ComputerCanvas = () => {
       window.removeEventListener("resize", handleMediaQueryChange);
     };
   }, []);
-  
 
   return (
     <Canvas
       frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true}}
+      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls 
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      />
-       <Computers isMobile={isMobile} />  
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Computers isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
     </Canvas>
   );
-}
+};
 
 export default ComputerCanvas;
