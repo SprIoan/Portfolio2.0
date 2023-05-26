@@ -72,19 +72,37 @@ const Works = () => {
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
-
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px]
-          max-w-3xl leading-[30px]"
-        >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
-        </motion.p>
+      <div className="flex justify-center items-center">
+        <div className="office-card">
+          <div className="card-content">
+            <h3 className="card-title">I know exactly what I'm doing</h3>
+            <h4 className="card-subtitle">
+              <span className="card-subtitle-word">
+                But in a much more real sense, I have no idea what I'm doing.
+              </span>
+            </h4>
+          </div>
+        </div>
+        <div className="office-card">
+          <div className="card-content">
+            <h3 className="card-title">I’m not superstitious</h3>
+            <h4 className="card-subtitle">
+              <span className="card-subtitle-word">
+                But I am a little stitious.
+              </span>
+            </h4>
+          </div>
+        </div>
+        <div className="office-card">
+          <div className="card-content">
+            <h3 className="card-title">Am I a hero?</h3>
+            <h4 className="card-subtitle">
+              <span className="card-subtitle-word">
+                I really can't say, but yes.
+              </span>
+            </h4>
+          </div>
+        </div>
       </div>
 
       <div className="mt-20 flex justify-center	items-center flex-wrap gap-7">

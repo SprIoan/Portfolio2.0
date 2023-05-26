@@ -74,7 +74,7 @@ const Gallery = () => {
   }, [mouseDown, mouseDownAt]);
 
   return (
-    <>
+    <div className="gallery">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Collection</p>
         <h2 className={styles.sectionHeadText}>Gallery</h2>
@@ -108,7 +108,7 @@ const Gallery = () => {
           <img className="image" src={pic8} draggable="false" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
