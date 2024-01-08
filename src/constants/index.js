@@ -13,6 +13,7 @@ import {
   git,
   sql,
   ntua,
+  grnet,
   iccs,
   gsna,
   oldportfolio,
@@ -175,6 +176,18 @@ const experiences = [
       "Developing web applications using HTML,CSS, JavaScript & Python",
       "Providing IT Support regarding hospital applications",
       "Liaising daily with officers from low ranking to Major Generals",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "National Infrastructures for Research and Technology",
+    icon: grnet,
+    iconBg: "white",
+    date: "Jul 2023 - Ongoing",
+    points: [
+      "Contributing to Greece's digital transformation in association with the Ministry of Digital Governance",
+      "Developing web applications using high-level frameworks like Laravel & Vue JS",
+      "Cooperating with a plethora of different departments as well as top government executives",
     ],
   },
 ];

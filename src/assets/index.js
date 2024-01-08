@@ -27,6 +27,7 @@ import ntua from "./company/ntua.png";
 import iccs from "./company/iccs.png";
 import gsna from "./company/gsna.jpg";
 import nimts from "./company/nimts.png";
+import grnet from "./company/grnet.png";
 
 import oldportfolio from "./old-portfolio.png";
 import beyondpower from "./beyondpower.png";
@@ -71,6 +72,7 @@ export {
   gsna,
   nimts,
   ntua,
+  grnet,
   iccs,
   slide,
   oldportfolio,
